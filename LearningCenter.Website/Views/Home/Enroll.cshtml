@@ -1,0 +1,29 @@
+﻿@model List<LearningCenter.Website.Models.ClassViewModel>
+@{
+    ViewData["Title"] = "Student Class List";
+}
+
+<div class="row border-bottom py-3 mb-3">
+    <div class="col">
+        <h3>Enroll In Class</h3>
+    </div>
+</div>
+<div class="row mb-3">
+    <form method="post" asp-action="Enroll" class="">
+        <div class="col d-inline-flex">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <select id="select-enroll-class" class="custom-select" name="Id">
+                @{
+                    <option selected disabled hidden>Select a class</option>
+                    foreach (var c in Model)
+                    {
+                        <option value="@c.Id">@c.Name</option>
+                    }
+
+                }
+                <option hidden selected disabled>Select A Class</option>
+            </select>
+            <button class="btn btn-light border ml-3" type="submit">Enroll</button>
+        </div>
+    </form>
+</div>

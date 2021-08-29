@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext 'Data Source=COLIN-PC\SQLEXPRESS;Initial Catalog=mini-cstructor;integrated security=True' Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -ContextDir Context -Context MiniCStructorContext -Project LearningCenter.Repository -force

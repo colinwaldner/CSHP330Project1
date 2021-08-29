@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+<div class="jumbotron w-100">
+    <h1 class="display-4">The Learning Center</h1>
+    <p class="lead">The place for technology classes.</p>
+    <hr class="my-4">
+    <button class="btn btn-primary" type="button">Learn More<i class="fas fa-angle-double-right pl-2"></i></button>
+</div>
+</div>
+<div class="row py-4 justify-content-between">
+    <div class="">
+        <a class="btn btn-link home-buttons pl-0 pb-0" asp-action="classlist">Class List</a>
+        <div><small>See all our class offerings.</small></div>
+    </div>
+    <div class="">
+        <a class="btn btn-link home-buttons pl-0 pb-0" asp-action="StudentClasses">Your enrolled classes</a>
+        <div><small>See the classes you're enrolled in.'</small></div>
+    </div>
+    <div class="">
+        <a class="btn btn-link home-buttons pl-0 pb-0" asp-action="Enroll">Enroll in a class</a>
+        <div><small>Take a new class.</small></div>
+    </div>
+</div>
